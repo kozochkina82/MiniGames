@@ -1,0 +1,2 @@
+# MiniGames
+RSSchool learning project
