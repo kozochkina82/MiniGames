@@ -1,0 +1,5 @@
+set -e
+echo "Running ESLint..."
+npm run lint
+echo "Running Prettier check..."
+npm run format:check
