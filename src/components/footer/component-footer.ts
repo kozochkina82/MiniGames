@@ -8,8 +8,13 @@ export function renderFooter(): HTMLElement {
 
   const nav = createElement("nav", { className: "footer__nav" }, [
     createElement("a", {
+      className: "footer__text",
+      textContent: "2026 MiniGames. All rights reserved",
+      attrs: { href: "#" },
+    }),
+    createElement("a", {
       className: "footer__link",
-      textContent: "Главная",
+      textContent: "RSSchool",
       attrs: { href: "#" },
     }),
   ]);
