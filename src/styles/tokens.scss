@@ -1,57 +1,109 @@
 :root {
-  // --- Colors ---
-  --color-primary: #6c5ce7;
-  --color-primary-hover: #5849c2;
-  --color-secondary: #00b894;
-  --color-background: #0f0f1a;
-  --color-surface: #1a1a2e;
-  --color-text-primary: #ffffff;
-  --color-text-secondary: #a0a0b8;
-  --color-border: #2e2e45;
-  --color-error: #ff6b6b;
-  --color-success: #00b894;
+  // ============ COLOR TOKENS ============
 
-  // --- Sizes ---
-  --size-1: 4px;
-  --size-2: 8px;
-  --size-3: 12px;
-  --size-4: 16px;
-  --size-5: 24px;
-  --size-6: 32px;
-  --size-7: 48px;
-  --size-8: 64px;
+  // --- Base ---
+  --color-white: #ffffff;
+  --color-black: #000000;
 
-  // --- Corner radii ---
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 16px;
-  --radius-full: 9999px;
+  // --- General ---
+  --color-bg: #f9f8f3;
+  --color-on-bg: #5f5d75;
+  --color-on-bg-low: #737380;
+  --color-bg-footer: #1e1b3a;
+  --color-on-bg-footer: #b9b5c9;
+  --color-bg-footer-low: #2a264f;
+  --color-bg-footer-lowest: #3c376e;
+  --color-surface: #fff9e5;
+  --color-surface-low: #fffcf9;
+  --color-primary: #ffd028;
+  --color-primary-low: #fde047;
+  --color-primary-high: #e5bb00;
+  --color-on-primary: #242145;
+  --color-secondary: #f0eeff;
+  --color-tertiary: #3a2e8f;
+  --color-like: #ff4b48;
+  --color-error: #b3261e;
+  --color-price-free: #0d8a8f;
 
-  // --- Shadows ---
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
+  // --- Borders ---
+  --color-outline: #e5e7eb;
+  --color-outline-variant: #d2d2d2;
 
-  // --- Button sizes ---
-  --button-height-sm: 32px;
-  --button-height-md: 40px;
-  --button-height-lg: 48px;
-  --button-padding-x: var(--size-4);
+  // --- Additional ---
+  --color-avatar-random-1: #e6eef0;
+  --color-avatar-random-2: #a3e2c0;
+  --color-avatar-random-3: #bce3ff;
+  --color-avatar-random-4: #ffc9ff;
+  --color-avatar-random-5: #e9dff5;
 
-  // --- Font families ---
-  --font-family-base: "Inter", system-ui, sans-serif;
-  --font-family-heading: "Poppins", system-ui, sans-serif;
+  // ============ FONT TOKENS ============
 
-  // --- Font sizes ---
-  --font-size-xs: 12px;
-  --font-size-sm: 14px;
-  --font-size-md: 16px;
-  --font-size-lg: 20px;
-  --font-size-xl: 28px;
-  --font-size-2xl: 36px;
+  // --- Size ---
+  --font-size-display-large: 56px;
+  --font-size-display-medium: 36px;
+  --font-size-display-small: 24px;
+  --font-size-headline-large: 32px;
+  --font-size-headline-medium: 24px;
+  --font-size-headline-small: 20px;
+  --font-size-body-large: 18px;
+  --font-size-body-medium: 16px;
+  --font-size-body-small: 14px;
+  --font-size-label-extra-large: 16px;
+  --font-size-label-large: 14px;
+  --font-size-label-medium: 12px;
+  --font-size-label-small: 10px;
 
-  // --- Font weights ---
+  // --- Weight ---
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+
+  // --- Font family ---
+  --font-family-inter: "Inter", system-ui, sans-serif;
+  --font-family-roboto: "Roboto", system-ui, sans-serif;
+
+  // ============ SIZE TOKENS ============
+
+  --size-05: 4px;
+  --size-1: 8px;
+  --size-1-1: 12px;
+  --size-2: 16px;
+  --size-3: 24px;
+  --size-3-1: 28px;
+  --size-3-2: 30px;
+  --size-4: 32px;
+  --size-5: 40px;
+  --size-6: 48px;
+  --size-7: 56px;
+  --size-8: 64px;
+  --size-9: 72px;
+  --size-10: 80px;
+  --size-11: 88px;
+  --size-12: 96px;
+  --size-13: 104px;
+  --size-14: 112px;
+  --size-15: 120px;
+
+  // --- Corner radii ---
+  --corner-extra-small: 4px;
+  --corner-small: 8px;
+  --corner-medium: 12px;
+  --corner-large: 16px;
+  --corner-extra-large: 24px;
+  --corner-full: 9999px;
+
+  // --- Buttons ---
+  --btn-large-padding: 24px 16px;
+  --btn-medium-padding: 10px 20px;
+  --btn-small-padding: 10px 8px;
+  --btn-icon-padding: 8px;
+
+  // --- Shadows ---
+  --shadow-level-1: 4px 4px var(--color-on-primary);
+  --shadow-level-2: 6px 5px var(--color-on-primary);
+  --shadow-level-3: 8px 8px var(--color-on-primary);
+
+  // --- Part Sizes ---
+  --footer-brand-max-width: 320px;
 }
