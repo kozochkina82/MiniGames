@@ -1,0 +1,99 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/tokens.scss";
+@use "../../styles/globals.scss";
+
+.header {
+  @include page-container;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-bg);
+  padding-top: var(--size-3-1);
+  padding-bottom: var(--size-3-1);
+}
+
+.header__brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-icon {
+  width: var(--size-3-2);
+  height: var(--size-3-2);
+}
+
+.header__logo {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-display-small);
+  padding-left: var(--size-1);
+  color: var(--color-on-primary);
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--size-5);
+}
+
+.header__link {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-label-extra-large);
+  color: var(--color-on-bg);
+  text-decoration: none;
+  transition: font-weight 0.15s ease;
+
+  &::before {
+    content: attr(data-text);
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    font-weight: var(--font-weight-bold);
+  }
+
+  &:hover {
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+.header__actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--size-2);
+}
+
+.header__btn {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-label-extra-large);
+  color: var(--color-on-primary);
+  border-radius: var(--corner-small);
+  border: 2px solid var(--color-on-primary);
+  padding: var(--btn-medium-padding);
+  cursor: pointer;
+}
+
+.header__btn.header__btn-login {
+  background-color: var(--color-bg);
+}
+
+.header__btn.header__btn-login:hover {
+  background-color: var(--color-primary-low);
+}
+
+.header__btn.header__btn-signup {
+  background-color: var(--color-primary);
+}
+
+.header__btn.header__btn-signup:hover {
+  background-color: var(--color-primary-high);
+}
